@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop-2</title>
+    <link rel="stylesheet" href="assets/plugin/swiper/swiper-bundle.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/bootstrap/rtl-bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/fonts/icomoon.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body class="page-single-blog" data-spy="scroll" data-target="#navbar">
+<header>
+    <div class="header-top">
+        <nav class="navbar navbar-expand-lg navbar-light py-2 px-3">
+            <div class="btn-menu d-flex align-items-center d-lg-none" onclick="openNav()">
+                <i class="icon-btn-menu"></i>
+            </div>
+
+            <a href="#" class="navbar-brand">
+                <img class="logo" src="assets/images/logo.png" alt="logo">
+            </a>
+            <form class="search-box ">
+                <input type="text" class="form-control" placeholder="جستجو در گلوبال یدک...">
+                <div class="icon-search position-relative"><i class="icon-search"></i></div>
+            </form>
+            <div class="header-action ml-auto">
+                <div class="btn-header">
+                    <a href="#" class="btn text-secondary">
+                        <i class="icon-profile"></i>
+                        <span class="user">ورود به حساب کاربری</span>
+                    </a>
+                </div>
+                <div class="btn-cart">
+                    <a href="#" class="btn-basket">
+                        <i class="icon-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="header-down">
+        <div class="navbar navbar-expand-lg navbar-light pt-0 sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn d-lg-none" onclick="closeNav()">&times;</a>
+            <div class="logo d-lg-none d-block">
+                <img src="assets/images/logo.png" class="w-100" alt="logo">
+            </div>
+            <ul class="list-unstyled navbar-nav categorize-item">
+                <li class="nav-item"><a href="#" class="nav-link active">
+                    <span>فیلتر محصولات</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>خودروها</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>مصرفی</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>بدنه</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>تعلیق موتوری</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>جانبی</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 aside">
+                <div class="title-aside mb-4">
+                    <a href="#" class="p-0  font-weight-bold">
+                        <span class=""> فروشگاه اینترنتی گلوبال یدک /فروشگاه/ شیشه شوی</span>
+                    </a>
+                </div>
+                <div class="has-pager d-lg-block d-none">
+                    <div class="box-header my-shadow p-3 bg-light">
+                        <form class="search-box position-relative">
+                            <label for="search" class="font-weight-bold border-bottom w-100 pb-2 f1 text-dark">جستجو</label>
+                            <input type="text" class="form-control f1 font-weight-light mt-2 " placeholder="مقاله خود را جستجو کنید">
+                            <div class="icon-search"></div>
+                        </form>
+                    </div>
+                    <div class="list-aside my-shadow mt-4 p-3 rounded bg-light">
+                        <div class="title-list"><h3 class="border-bottom f1 text-dark pb-3">دسته بندی محصولات </h3></div>
+                        <ul class="list-unstyled ">
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 mt-3 f1">استارت و شارژ</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">اگزوز</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">تهویه مطبوع</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">چرخ و تایر</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">سیستم سوخت رسانی</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">قطعات بدنه</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">قطعات موتور</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-1 f1">مصرفی</nav>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12 mt-lg-5 mt-0">
+                <div class="btn-open d-flex align-items-center d-lg-none d-block " onclick="openNav()">
+                    <i class="icon-home text-dark mb-2"></i>
+                    <span class="d-lg-none d-block search-fast font-weight-bold mb-2">جستجو سریع</span>
+                </div>
+                <div class="list-content bg-light my-shadow bg-light position-relative">
+                    <div class="header-list">
+                        <div class="navbar navbar-expand-lg navbar-light pt-0 " id="myAside">
+                            <a href="javascript:void(0)" class="close d-lg-none" onclick="closeNav()">&times;</a>
+                            <div class="has-pager d-lg-none d-block">
+                                <div class="box-header my-shadow bg-light p-3">
+                                    <form class="search-box position-relative">
+                                        <label for="search" class="font-weight-bold border-bottom w-100 pb-2 f1 text-dark">جستجو</label>
+                                        <input type="text" class="form-control f1 font-weight-light mt-2 " placeholder="مقاله خود را جستجو کنید">
+                                        <div class="icon-search"></div>
+                                    </form>
+                                </div>
+                                <div class="list-aside my-shadow mt-4 p-3 bg-light rounded">
+                                    <div class="title-list"><h3 class="border-bottom f1 text-dark pb-3">دسته بندی مقالات </h3></div>
+                                    <ul class="list-unstyled ">
+                                        <li class="list-item">
+                                            <nav class="nav-item pb-3 mt-3 f1">دانستنی ها</nav>
+                                        </li>
+                                        <li class="list-item">
+                                            <nav class="nav-item pb-3 f1">پزشکی</nav>
+                                        </li>
+                                        <li class="list-item">
+                                            <nav class="nav-item pb-3 f1">راهنمای خرید</nav>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="labels my-shadow p-3 mt-4 bg-light rounded">
+                                    <div class="title-label"><h3 class="border-bottom f1 text-dark pb-3">برچسب ها</h3></div>
+                                    <div class="btns mt-3">
+                                        <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">چراغ</a></button>
+                                        <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">واتر پمپ</a></button>
+                                        <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">احتراق</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-open d-flex align-items-center " onclick="openNav()">
+                            <i class="icon-home d-lg-block d-none"></i>
+                        </div>
+                        <nav class="navbar navbar-shop d-lg-block d-none">
+                            <ul class="list-unstyled navbar navbar-nav d-inline-block">
+                                <li class="nav-item"><a href="#" class="nav-link">مرتب سازی بر اساس :</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">پیشنهادات ویژه</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">پرفروش ترین</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">محبوب ترین</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">پربازدیدترین</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="items d-flex align-items-center">
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-13.jpg" class="" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">بادگیر(اسپویلر) عقب</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-12.jpg" class="" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">درب عقب لیفان ایکس 60</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center position-relative">
+                                        <div class="btn-li text-center"><a href="#" class="btn btn-outline-secondary">تماس بگیرید</a></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-11.jpg" class="" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">دستگیره بیرونی درب عقب</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="items d-flex align-items-center">
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-10.jpg" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">چراغ پلاک عقب لیفان</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center position-relative">
+                                        <div class="btn-li text-center"><a href="#" class="btn btn-outline-secondary">تماس بگیرید</a></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-9.jpg" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">نوار دور درب عقبs</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill<!---->" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-2.jpg" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">قفل درب عقب جکss</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center position-relative">
+                                        <div class="btn-li text-center"><a href="#" class="btn btn-outline-secondary">تماس بگیرید</a></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="items d-flex align-items-center">
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-7.jpg" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">قفل درب صندوق عقب</a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center position-relative">
+                                        <div class="btn-li text-center"><a href="#" class="btn btn-outline-secondary">تماس بگیرید</a></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/default.png" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">بادگیر(اسپویلر) عقب </a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-2.jpg" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">بادگیر(اسپویلر) عقب </a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="items d-flex align-items-center">
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/default.png" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">آرم نوشته JAC درب </a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/product-15.jpg" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">جک درب عقب لیفان </a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-center mt-5">
+                                        <div class="price-value">
+                                            <del>69000</del>
+                                        </div>
+                                        <div class="price-discount-oval">
+                                            <span>52%</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-value-wrapper mt-0">
+                                        <span class="text-dark font-weight-bold">32000 تومان</span
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="item list-unstyled">
+                            <li class="my-shadow pb-5 mt-3">
+                                <a href="#" class="product-box">
+                                    <img src="assets/images/default.png" class="w-75" alt="product">
+
+                                    <div class="product-box-title">
+                                        <a href="#">آرم روی درب صندوق </a>
+                                    </div>
+                                    <div class="rate-status">
+                                        <div class="d-inline-block stars">
+                                            <div class="stars rate">
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+                                                <i class="icon-star-empty" aria-hidden="true"></i>
+
+                                                <div class="selected-star" style="width: 50%">
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-fill" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                    <i class="icon-star-empty" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center position-relative">
+                                        <div class="btn-li text-center"><a href="#" class="btn btn-outline-secondary">تماس بگیرید</a></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slide-button">
+                        <ul class="list-unstyled pagination navbar">
+                            <li class="pagination-item"><a href="#" class="nav-link "><span>1</span></a></li>
+                            <li class="pagination-item"><a href="#" class="nav-link "><span>2</span></a></li>
+                            <li class="pagination-item"><a href="#" class="nav-link"><span>3</span></a></li>
+                            <li class="pagination-item"><a href="#" class="nav-link "><span class="icon-arrow-left"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<footer class="position-relative mt-4 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot"><h3 class="mt-5 mb-4">تیم پشتیبانی ما</h3></div>
+                <p>امروزه در حوزه تجارت الکترونیک نیز به چشم می خورد و دسته خاصی
+                    از فروشگاههای
+                    آنلاین با ارائه محصولات چندین فروشنده در سامانه فروش خودرو دسته مارکت پلیس های </p>
+                <div>
+                    <i class="icon-question-answer"></i>
+                    <span class="ml-1">پیگیری کالا</span>
+                    <span class="ml-4">02166945123</span>
+                </div>
+                <div>
+                    <i class="icon-phone"></i>
+                    <span class="ml-1">اطلاعات خرید</span>
+                    <span class="ml-4">09109143135</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot title-nav"><h3 class="mt-5 mb-4 text-center">دسترسی سریع</h3></div>
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="#" class="nav-link">فروشگاه</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لیست دسته بندی ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">محصولات </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ محصول</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ورود و ثبت نام</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot title-nav"><h3 class="mt-5 mb-4 text-center">خدمات مشتریان</h3></div>
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="#" class="nav-link">فروشگاه</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لیست دسته بندی ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">محصولات </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ محصول</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ورود و ثبت نام</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot"><h3 class="mt-5 mb-4">درباره ما</h3></div>
+                <p>امروزه در حوزه تجارت الکترونیک نیز به چشم می خورد و دسته خاصی
+                    از فروشگاههای
+                    آنلاین با ارائه محصولات چندین فروشنده در سامانه فروش خودرو دسته مارکت پلیس های </p>
+            </div>
+        </div>
+        <div class="social-modia d-flex align-items-center">
+            <div class="trust-symbol flex-md-column">
+                <img src="assets/images/foot1.png" alt="foot">
+            </div>
+            <div class="trust-symbol flex-md-column">
+                <img src="assets/images/foot21.png" alt="foot">
+            </div>
+            <div class="trust-symbol flex-md-column">
+                <img src="assets/images/foot3.png" alt="foot">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="center">Copyright@2012-2019 globalyadak.com All Rights Reserved</div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/plugin/jquery/jquery.min.js"></script>
+<script src="assets/plugin/swiper/swiper-bundle.min.js"></script>
+<script src="assets/plugin/bootstrap/bootstrap.min.js"></script>
+<script src="assets/script.js"></script>
+<script>
+    var navbar = document.getElementById('myAside');
+    var btn = document.querySelector('.btn-open');
+    var closebtn = document.querySelector('.close');
+    if (btn) {
+        btn.addEventListener('click', function () {
+            navbar.style.right = 0;
+        });
+    }
+
+    if (close) {
+        closebtn.addEventListener('click', function () {
+            navbar.style.right = '100%';
+        });
+    }
+
+</script>
+</body>
+</html>

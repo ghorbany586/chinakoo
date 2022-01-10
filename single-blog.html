@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>single-blog</title>
+    <link rel="stylesheet" href="assets/plugin/swiper/swiper-bundle.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/bootstrap/rtl-bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/fonts/icomoon.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body class="page-single-blog" data-spy="scroll" data-target="#navbar">
+<header>
+    <div class="header-top">
+        <nav class="navbar navbar-expand-lg navbar-light py-2 px-3">
+            <div class="btn-menu d-flex align-items-center d-lg-none" onclick="openNav()">
+                <i class="icon-btn-menu"></i>
+            </div>
+
+            <a href="#" class="navbar-brand">
+                <img class="logo" src="assets/images/logo.png" alt="logo">
+            </a>
+            <form class="search-box ">
+                <input type="text" class="form-control" placeholder="جستجو در گلوبال یدک...">
+                <div class="icon-search position-relative"><i class="icon-search"></i></div>
+            </form>
+            <div class="header-action ml-auto">
+                <div class="btn-header">
+                    <a href="#" class="btn text-secondary">
+                        <i class="icon-profile"></i>
+                        <span class="user">ورود به حساب کاربری</span>
+                    </a>
+                </div>
+                <div class="btn-cart">
+                    <a href="#" class="btn-basket">
+                        <i class="icon-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="header-down">
+        <div class="navbar navbar-expand-lg navbar-light pt-0 sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn d-lg-none" onclick="closeNav()">&times;</a>
+            <div class="logo d-lg-none d-block">
+                <img src="assets/images/logo.png" class="w-100" alt="logo">
+            </div>
+            <ul class="list-unstyled navbar-nav categorize-item">
+                <li class="nav-item"><a href="#" class="nav-link active">
+                    <span>فیلتر محصولات</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>خودروها</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>مصرفی</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>بدنه</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>تعلیق موتوری</span>
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>جانبی</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 aside">
+                <div class="title-aside mb-4">
+                    <a href="#" class="p-0  font-weight-bold">
+                        <span class=""> فروشگاه اینترنتی گلوبال یدک / وبلاگ</span>
+                    </a>
+                </div>
+                <div class="has-pager d-lg-block d-none ">
+                    <div class="box-header my-shadow p-3 bg-light">
+                        <form class="search-box position-relative">
+                            <label for="search" class="font-weight-bold border-bottom w-100 pb-2 f1 text-dark">جستجو</label>
+                            <input type="text" class="form-control f1 font-weight-light mt-2 " placeholder="مقاله خود را جستجو کنید">
+                            <div class="icon-search"></div>
+                        </form>
+                    </div>
+                    <div class="list-aside my-shadow mt-4 p-3 rounded bg-light">
+                        <div class="title-list"><h3 class="border-bottom f1 text-dark pb-3">دسته بندی مقالات </h3></div>
+                        <ul class="list-unstyled ">
+                            <li class="list-item">
+                                <nav class="nav-item pb-3 mt-3 f1">دانستنی ها</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-3 f1">پزشکی</nav>
+                            </li>
+                            <li class="list-item">
+                                <nav class="nav-item pb-3 f1">راهنمای خرید</nav>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="labels my-shadow p-3 mt-4 rounded bg-light">
+                        <div class="title-label"><h3 class="border-bottom f1 text-dark pb-3">برچسب ها</h3></div>
+                        <div class="btns mt-3">
+                            <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">چراغ</a></button>
+                            <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">واتر پمپ</a></button>
+                            <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">احتراق</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 mt-lg-5">
+                <div class="btn-open d-flex align-items-center d-lg-none d-block " onclick="openNav()">
+                    <i class="icon-home text-dark mb-2"></i>
+                    <span class="d-lg-none d-block search-fast font-weight-bold mb-2">جستجو سریع</span>
+                </div>
+
+                <div class="list-content guide bg-light my-shadow position-relative">
+                    <div class="header-list">
+                        <div class="navbar navbar-expand-lg navbar-light pt-0 " id="myAside">
+                            <a href="javascript:void(0)" class="close d-lg-none" onclick="closeNav()">&times;</a>
+                            <div class="has-pager d-lg-none d-block ">
+                                <div class="box-header my-shadow p-3 bg-light">
+                                    <form class="search-box position-relative">
+                                        <label for="search" class="font-weight-bold border-bottom w-100 pb-2 f1 text-dark">جستجو</label>
+                                        <input type="text" class="form-control f1 font-weight-light mt-2 " placeholder="مقاله خود را جستجو کنید">
+                                        <div class="icon-search"></div>
+                                    </form>
+                                </div>
+                                <div class="list-aside my-shadow mt-4 p-3 rounded bg-light">
+                                    <div class="title-list"><h3 class="border-bottom f1 text-dark pb-3">دسته بندی مقالات </h3></div>
+                                    <ul class="list-unstyled ">
+                                        <li class="list-item">
+                                            <nav class="nav-item pb-3 mt-3 f1">دانستنی ها</nav>
+                                        </li>
+                                        <li class="list-item">
+                                            <nav class="nav-item pb-3 f1">پزشکی</nav>
+                                        </li>
+                                        <li class="list-item">
+                                            <nav class="nav-item pb-3 f1">راهنمای خرید</nav>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="labels my-shadow p-3 mt-4 rounded bg-light">
+                                    <div class="title-label"><h3 class="border-bottom f1 text-dark pb-3">برچسب ها</h3></div>
+                                    <div class="btns mt-3">
+                                        <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">چراغ</a></button>
+                                        <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">واتر پمپ</a></button>
+                                        <button type="button" class="border-0 rounded"><a href="#" class="btn font-weight-light">احتراق</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title m-0"><h2 class="text-dark">راهنمای انتخاب و خرید روغن گیربکس</h2></div>
+                    <div class="guide-select">
+                        <div class="box-img">
+                            <img src="assets/images/blog-2.jpg" alt="blog2">
+                        </div>
+                        <span class="entry-meta d-flex mt-4 align-items-center">
+                        <span class="category">
+                            <i class="icon-calendar text-warning"></i>
+                            <span class="small">دسته بندی : </span>
+                            <a href="#" class="category-tag text-dark f1">راهنمای خرید</a>
+                        </span>
+                        <span class="category-time">
+                            <i class="icon-calendar text-warning ml-md-3 ml-1"></i>
+                            <span class="small">زمان مطالعه : </span>
+                             <a href="#" class="category-tag text-dark f1">5 دقیقه</a>
+                        </span>
+                    </span>
+                        <div class="entry-content">
+                            <div class="paragraph">
+                                <p class="text-justify pt-4">
+                                    طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستنداین موضوع رو برو هستند
+                                </p>
+                            </div>
+                            <div class="paragraph">
+                                <div class="title-content"><h3 class="text-dark">چراغ های راهنما برای این روزها</h3></div>
+                                <p class="text-justify pt-4">
+                                    طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستنداین موضوع رو برو هستند
+                                </p>
+                                <p> طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    طراحان سایت هنگام طراحی قالب سایت معمولا بااین موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    هستند طراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت</p>
+                                <p> طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    طراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا
+                                    باطراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو برو
+                                    باطراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو برو
+                                    قالب هستند طراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت</p>
+                            </div>
+                            <div class="paragraph">
+                                <div class="title-content"><h3 class="text-dark">نمایشگر جانبی و علی عبدالسلام</h3></div>
+                                <p> طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستند طراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    این موضوع رو برو هستندطراحان سایت هنگام طراحی قالب سایت معمولا با
+                                    طراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا
+                                    باطراحان سایت هنگام طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو برو
+                                </p>
+                            </div>
+                            <div class="footer-guide">
+                                <a href="#"><i class="icon-calendar text-warning"></i></a>
+                                <a href="#"><span>برچسب ها : </span></a>
+                                <a href="#" class="link">دوربین دیجیتال</a>
+                                <a href="#" class="link">راهنمای خرید</a>
+                                <a href="#" class="link">دوربین دیجیتال</a>
+                                <a href="#" class="link">سفارش دوربین</a>
+                                <a href="#" class="link">دوربین دیجیتال</a>
+                                <a href="#" class="link">دوربین دیجیتال</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-article mt-5">
+            <div class="container my-shadow  bg-light">
+                <div class="title m-0"><h2 class="ml-3">مطالب مرتبط</h2></div>
+                <div class="swiper-container bg-light border-top-0 pt-0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card border-0 shadow d-flex">
+                                    <img src="assets/images/blog1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-light pb-2">واتر پمپ (water pump) چیست؟</h5>
+                                        <p class="card-text text-secondary">بر اثر احتراق در موتورهای احتراق داخلی گرمای زیادی تولید می شود که حتی می تواند
+                                            فلزات
+                                            مجموعه سیلندر و پیستون را ذوب کند. </p>
+                                        <a href="#" class="btn text-secondary btn-sm pt-2 f1">بیشتر بخوانید</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card border-0 shadow d-flex">
+                                    <img src="assets/images/blog2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-light pb-2">واتر پمپ (water pump) چیست؟</h5>
+                                        <p class="card-text text-secondary">بر اثر احتراق در موتورهای احتراق داخلی گرمای زیادی تولید می شود که حتی می تواند
+                                            فلزات
+                                            مجموعه سیلندر و پیستون را ذوب کند. </p>
+                                        <a href="#" class="btn  text-secondary btn-sm pt-2 f1">بیشتر بخوانید</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card border-0 shadow d-flex">
+                                    <img src="assets/images/blog1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-light pb-2">واتر پمپ (water pump) چیست؟</h5>
+                                        <p class="card-text text-secondary">بر اثر احتراق در موتورهای احتراق داخلی گرمای زیادی تولید می شود که حتی می تواند
+                                            فلزات
+                                            مجموعه سیلندر و پیستون را ذوب کند. </p>
+                                        <a href="#" class="btn  text-secondary btn-sm pt-2 f1">بیشتر بخوانید</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card border-0 shadow d-flex">
+                                    <img src="assets/images/blog2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-light pb-2">واتر پمپ (water pump) چیست؟</h5>
+                                        <p class="card-text text-secondary">بر اثر احتراق در موتورهای احتراق داخلی گرمای زیادی تولید می شود که حتی می تواند
+                                            فلزات
+                                            مجموعه سیلندر و پیستون را ذوب کند. </p>
+                                        <a href="#" class="btn  text-secondary btn-sm pt-2 f1">بیشتر بخوانید</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card border-0 shadow d-flex">
+                                    <img src="assets/images/blog1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-light pb-2">واتر پمپ (water pump) چیست؟</h5>
+                                        <p class="card-text text-secondary">بر اثر احتراق در موتورهای احتراق داخلی گرمای زیادی تولید می شود که حتی می تواند
+                                            فلزات
+                                            مجموعه سیلندر و پیستون را ذوب کند. </p>
+                                        <a href="#" class="btn text-secondary btn-sm pt-2 f1">بیشتر بخوانید</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="position-relative mt-4 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot"><h3 class="mt-5 mb-4">تیم پشتیبانی ما</h3></div>
+                <p>امروزه در حوزه تجارت الکترونیک نیز به چشم می خورد و دسته خاصی
+                    از فروشگاههای
+                    آنلاین با ارائه محصولات چندین فروشنده در سامانه فروش خودرو دسته مارکت پلیس های </p>
+                <div>
+                    <i class="icon-question-answer"></i>
+                    <span class="ml-1">پیگیری کالا</span>
+                    <span class="ml-4">02166945123</span>
+                </div>
+                <div>
+                    <i class="icon-phone"></i>
+                    <span class="ml-1">اطلاعات خرید</span>
+                    <span class="ml-4">09109143135</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot title-nav"><h3 class="mt-5 mb-4 text-center">دسترسی سریع</h3></div>
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="#" class="nav-link">فروشگاه</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لیست دسته بندی ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">محصولات </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ محصول</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ورود و ثبت نام</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot title-nav"><h3 class="mt-5 mb-4 text-center">خدمات مشتریان</h3></div>
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="#" class="nav-link">فروشگاه</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لیست دسته بندی ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">محصولات </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ محصول</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">لندینگ وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ورود و ثبت نام</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="title-foot"><h3 class="mt-5 mb-4">درباره ما</h3></div>
+                <p>امروزه در حوزه تجارت الکترونیک نیز به چشم می خورد و دسته خاصی
+                    از فروشگاههای
+                    آنلاین با ارائه محصولات چندین فروشنده در سامانه فروش خودرو دسته مارکت پلیس های </p>
+            </div>
+        </div>
+        <div class="social-modia d-flex align-items-center">
+            <div class="trust-symbol">
+                <img src="assets/images/foot1.png" alt="foot">
+            </div>
+            <div class="trust-symbol">
+                <img src="assets/images/foot21.png" alt="foot">
+            </div>
+            <div class="trust-symbol">
+                <img src="assets/images/foot3.png" alt="foot">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="center">Copyright@2012-2019 globalyadak.com All Rights Reserved</div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/plugin/jquery/jquery.min.js"></script>
+<script src="assets/plugin/swiper/swiper-bundle.min.js"></script>
+<script src="assets/plugin/bootstrap/bootstrap.min.js"></script>
+<script src="assets/script.js"></script>
+
+<script>
+    var navbar = document.getElementById('myAside');
+    var btn = document.querySelector('.btn-open');
+    var closebtn = document.querySelector('.close');
+    if (btn) {
+        btn.addEventListener('click', function () {
+            navbar.style.right = 0;
+        });
+    }
+
+    if (close) {
+        closebtn.addEventListener('click', function () {
+            navbar.style.right = '100%';
+        });
+    }
+
+</script>
+</body>
+</html>
